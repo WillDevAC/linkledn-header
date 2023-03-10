@@ -1,0 +1,113 @@
+/* @CSS RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f2ef;
+  box-sizing: border-box;
+}
+
+/* @HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 3.25rem;
+  padding: 0 10rem;
+}
+
+header .headerBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .headerBrand img {
+  width: 2.2rem;
+}
+
+header .headerBrand input {
+  background-color: #eef3f8;
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 0.4rem;
+  padding: 0 0.8rem 0 2.5rem;
+  line-height: 1.75;
+  font-size: 0.813rem;
+  height: 2.125rem;
+  width: 16rem;
+  border: none;
+}
+
+header .headerLinks {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .headerLinks ul {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  height: 100%;
+}
+
+header .headerLinks ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 0.8rem;
+  height: 100%;
+  position: relative;
+}
+
+header .headerLinks ul li:nth-child(7) {
+  border-left: 1px solid #e2e4e5;
+}
+
+header .headerLinks ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: gray;
+}
+
+header .headerLinks ul li a .headerLinksBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #cc1016;
+  border-radius: 50%;
+  top: 10%;
+  right: 20%;
+  width: 15px;
+  height: 15px;
+}
+
+header .headerLinks ul li a .headerLinksBadge::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  background-color: white;
+  animation: pulse 1.5s infinite;
+}
+
+header .headerLinks ul li a #profilePicture {
+  border-radius: 50%;
+}
+
+header .headerLinks ul li a img {
+  width: 1.5rem;
+}
